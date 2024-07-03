@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+/* ---------------------Header------------------- */
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 10%;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.Lang-button{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+    padding: 7px 10px;
+
+}
+.Lang-button img{
+    width: 10px;
+    margin-left: 10px;
+}
+.header-content{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 100px;
+    text-align: center;
+}
+.header-content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+.header-content h3{
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.email{
+    border-radius: 4px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top: 30px;
+}
+.email input{
+    flex: 1;
+    height: 54px;
+    width: 350px;
+    border: 1px solid rgb(119, 119, 119);
+    border-radius: 4px;
+    outline: 0;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-left: 20px;
+    background:rgba(43, 43, 43,0.3);
+    backdrop-filter: blur(1px);
+    color: #fff;
+}
+.email button{
+    background: #db0001;
+    border: 0;
+    border-radius: 4px;
+    height: 54px;
+    outline: 0;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+.grey-line{
+    width: 100%;
+    height: 5px;
+    background-color: rgb(52, 52, 52);
+}
+/* ----------------------------------------Featurees---------------------------- */
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    padding-top: 90px;
+}
+.image-video{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    display: flex;
+}
+.image-video img{
+    display: block;
+    width: 90%;
+    margin: auto;
+    z-index: 10;
+}
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.image-video video{
+    position: relative;
+    width: 70%;
+    right: 450px;
+    z-index: -1;
+}
+.video3{
+    top: 25px;
+    height: 185px;
+    margin-left: 25px;
+}
+
+/* -----------------------------Frequently Asked Questions---------------------------- */
+.faq{
+    padding: 50px 12%;
+    text-align: center;
+    font-size: 19px;
+}
+.faq h2{
+    font-weight: 800;
+    font-size: 40px;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px ;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.7s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition:  max-height 0.5s , padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg) ;
+}
+.faq .email{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+.faq small{
+    font-size: 13px;
+}
+
+/* ------------------------------------- footer --------------------------------------*/
+
+.footer{
+    padding: 50px 15%;
+    color: #777;
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+
+}
+.col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+}
+.row{
+    align-items: flex-start;
+    padding: 10px 0;
+
+}
+.footer .Lang-button{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+
+}
+.crtext{
+    font-size: 14px;
+    margin-top: 20px;
+}
