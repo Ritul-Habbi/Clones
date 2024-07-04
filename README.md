@@ -6,7 +6,6 @@ Welcome to the repository for the front-end clones of Amazon and Netflix! This p
 - [Project Overview](#project-overview)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-- [Folder Structure](#folder-structure)
 - [Features](#features)
 
 ## Project Overview
